@@ -1,0 +1,133 @@
+:root {
+    --imgShift: 80vh;
+    --imgWidth: 80vh;
+    --imgHeight: 80vh;
+    --textWidth: 55vh;
+    --textShift: 55vh;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #f8f8f8;
+    margin: 2vh 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto Flex', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  input[type=radio] {
+    display: none;
+  }
+  
+  .carousel__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #dcdbdb;
+  }
+  
+  .content__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .text__container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: var(--textWidth);
+  }
+  
+  .text__wrapper {
+    display: flex;
+    width: calc(var(--textWidth)*5);
+    transition: all .5s ease-in-out
+  }
+  
+  .text__content {
+    width: var(--textWidth);
+    color: #423f3f;
+  }
+  
+  .dot__wrapper {
+    display: flex;
+  }
+  
+  .dot__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+  }
+  
+  .dot__item {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #dadada;
+    border: 0.2em solid #dadada;
+    cursor: pointer;
+    transition: all .5s ease-in-out
+  }
+  
+  .dot__label:hover .dot__item,
+  .dot__label:active .dot__item {
+    background: #1a73e8;
+    border-color: #1a73e8;
+  }
+  
+  .carousel__img-wrapper {
+    width: var(--imgWidth);
+    overflow: hidden;
+  }
+  
+  .carousel__images {
+    display: flex;
+    flex-direction: row;
+    width: calc(var(--imgWidth)*5);
+    transition: all .5s ease-in-out
+  }
+  
+  img {
+    width: var(--imgWidth);
+    height: var(--imgHeight);
+  }
+  
+  
+  @media only screen and (max-width: 1200px) {
+  
+    .body {
+      font-size: 1rem;
+    }
+  
+    :root {
+      --imgShift: 60vw;
+      --imgWidth: 60vw;
+      --imgHeight: 60vw;
+      --textWidth: 60vw;
+      --textShift: 60vw;
+    }
+  
+    .content__footer {
+      flex-direction: column-reverse;
+      align-content: center;
+    }
+  
+    .dot__wrapper {
+      justify-content: center;
+    }
+  
+  }
