@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Mem Slider</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,600;8..144,700;8..144,800;8..144,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="carousel" id="slide1" checked>
+        <input type="radio" name="carousel" id="slide2">
+        <input type="radio" name="carousel" id="slide3">
+        <input type="radio" name="carousel" id="slide4">
+        <input type="radio" name="carousel" id="slide5">
+
+        <div class="carousel__wrapper">
+            <div class="carousel__img-wrapper">
+                <div class="carousel__images">
+                    <div>
+                        <img src="src/assets/img1.jpg" alt="slide1">
+                    </div>
+                    <div>
+                        <img src="src/assets/img2.jpg" alt="slide2">
+                    </div>
+                    <div>
+                        <img src="src/assets/img3.jpg" alt="slide3">
+                    </div>
+                    <div>
+                        <img src="src/assets/img4.jpg" alt="slide4">
+                    </div>
+                    <div>
+                        <img src="src/assets/img5.jpg" alt="slide5">
+                    </div>
+                </div>
+            </div>
+            <div class="content__footer">
+                <div class="text__container">
+                    <div class="text__wrapper">
+                        <p class="text__content">Daytime sleep</p>
+                        <p class="text__content">Everything is possible</p>
+                        <p class="text__content">Better not google</p>
+                        <p class="text__content">We are all humans</p>
+                        <p class="text__content">Zhiza</p>
+                    </div>
+                </div>
+                <div class="dot__wrapper">
+                    <label class="dot__label" for="slide1"><div class="dot__item"></div></label>
+                    <label class="dot__label" for="slide2"><div class="dot__item"></div></label>
+                    <label class="dot__label" for="slide3"><div class="dot__item"></div></label>
+                    <label class="dot__label" for="slide4"><div class="dot__item"></div></label>
+                    <label class="dot__label" for="slide5"><div class="dot__item"></div></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
